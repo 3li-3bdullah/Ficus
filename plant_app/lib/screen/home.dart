@@ -10,29 +10,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        elevation: 0,
-        actions: [
-          Container(
-            margin: const EdgeInsets.only(top:30),
-            height: 80,
-            width: 80,
-            decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(80)),
-                image: DecorationImage(
-                    image: AssetImage("images/assets/ali.jpg"),fit: BoxFit.cover)),
-          )
-        ],
-      ),
-      body: Column(
-        children: [
-          Container(
+      
+      body: Stack(
+            children: [
+              Container(
             height: double.infinity,
             width: width,
             color: Colors.green,
           ),
-          Stack(
-            children: [
               Positioned(
                 height: width * 1.2,
                 width: width,
@@ -52,7 +37,7 @@ class _HomeState extends State<Home> {
             ],
           )
         
-         ] ));
+         );
   }
 }
 /*
