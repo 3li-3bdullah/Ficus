@@ -26,7 +26,6 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: [
-          Row(children:[
           Container(
             height: double.infinity,
             width: width,
@@ -52,8 +51,7 @@ class _HomeState extends State<Home> {
                   ))
             ],
           )
-        ],
-          ),
+        
          ] ));
   }
 }
