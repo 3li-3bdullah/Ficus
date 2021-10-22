@@ -12,6 +12,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
+        drawer: MyDrawer(),
         body: Stack(
       children: [
         Container(
@@ -31,8 +32,8 @@ class _HomeState extends State<Home> {
           ),
         ),
         Positioned(
-            top: width * .1,
-            right: - width / 1.5,
+            top: width / 6,
+            right: - width / 1.3,
             child: Container(
 
               decoration: const BoxDecoration(
