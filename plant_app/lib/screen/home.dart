@@ -17,14 +17,12 @@ class _HomeState extends State<Home> {
         Container(
           height: double.infinity,
           width: double.infinity,
-          color: Colors.green,
+         color: const Color(0xff56b286),
         ),
         Positioned(
-         // height: width * 1.2,
-         // width: width,
           bottom: 0,
           child: Container(
-            height: width * 1.2,
+            height: width,
             width: width,
             decoration: const BoxDecoration(color: Colors.white,
                 borderRadius: BorderRadius.only(
