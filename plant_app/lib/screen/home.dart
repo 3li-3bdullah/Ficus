@@ -67,7 +67,7 @@ class _HomeState extends State<Home> {
         ),
         Positioned(
             top: width / 4,
-            right: - width / 2,
+            left:  width / 2,
             child: Container(
               height: width / 1.5,
               width: width / 2,
