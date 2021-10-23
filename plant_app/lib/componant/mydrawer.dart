@@ -14,8 +14,18 @@ class _MyDrawerState extends State<MyDrawer> {
       child: ListView(
         children: [
           Container(
-              child: const Padding(
-            padding: EdgeInsets.only(top: 50),
+              child:  Padding(
+            padding: const EdgeInsets.only(top: 50),
+            child:Column(
+             mainAxisAlignment:MainAxisAlignment.end,
+              children: const [
+              CircleAvatar(
+                radius:70,
+                backgroundImage: AssetImage("images/assets/ali.jpg"),
+
+              ),
+              
+            ])
           ))
         ],
       ),
