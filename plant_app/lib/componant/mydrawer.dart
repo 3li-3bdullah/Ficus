@@ -10,18 +10,20 @@ class MyDrawer extends StatefulWidget {
 class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return Drawer(elevation: 0,
       child: ListView(
         children: [
           UserAccountsDrawerHeader(
-            accountName: const Text("Ali Abdullah"),
-            accountEmail: const Text("Sudanese"),
+            accountName: const Text("Ali Abdullah" , style:TextStyle(color:Colors.black)),
+            accountEmail: const Text("Sudanese", style:TextStyle(color:Colors.black)),
             currentAccountPicture: Container(
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("images/assets/ali.jpg")),
                   shape: BoxShape.circle),
-            ),decoration: const BoxDecoration(color:Colors.white),
+            ),decoration: const BoxDecoration(
+              color:Color(0xfffafafa),
+              ),
           ),
          const Padding(
             padding: EdgeInsets.symmetric(horizontal:20),
