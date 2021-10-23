@@ -17,10 +17,10 @@ class _MyDrawerState extends State<MyDrawer> {
               child: Padding(
                   padding: const EdgeInsets.only(top: 50),
                   child: Column(              
-                    crossAxisAlignment: CrossAxisAlignment.end,    
+                    crossAxisAlignment: CrossAxisAlignment.start,    
                     children: const [
                         CircleAvatar(
-                          radius: 70,
+                          radius: 50,
                           backgroundImage: AssetImage("images/assets/ali.jpg"),
                         ),
                         SizedBox(height: 20),
@@ -34,7 +34,7 @@ class _MyDrawerState extends State<MyDrawer> {
                       ]))),
           const SizedBox(height: 18),
           const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 30),
             child: Divider(color: Colors.grey),
           ),
            drawerItems(
@@ -53,12 +53,12 @@ class _MyDrawerState extends State<MyDrawer> {
             () {},
           ),
           const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 30),
             child: Divider(
               color: Colors.grey,
             ),
           ),
-          Column(
+          Expanded(child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children:[
              drawerItems(
@@ -72,7 +72,8 @@ class _MyDrawerState extends State<MyDrawer> {
             () {},
           ),
         ],
-      ),
+      ),)
+          
          ] ));
   }
 
@@ -89,59 +90,3 @@ class _MyDrawerState extends State<MyDrawer> {
     );
   }
 }
-/* 
-UserAccountsDrawerHeader(
-            accountName: const Text("Ali Abdullah" , style:TextStyle(color:Colors.black)),
-            accountEmail: const Text("Sudanese", style:TextStyle(color:Colors.black)),
-            currentAccountPicture: Container(
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("images/assets/ali.jpg")),
-                  shape: BoxShape.circle),
-            ),decoration: const BoxDecoration(
-              color:Color(0xfffafafa),
-              ),
-          ),
-         const Padding(
-            padding: EdgeInsets.symmetric(horizontal:20),
-            child: Divider(
-              color:Colors.grey
-            ),
-          ),
-          drawerItems(
-            "Profile",
-            Icons.person_outline_outlined,
-            () {},
-          ),
-          drawerItems(
-            "Messages",
-            Icons.message_outlined,
-            () {},
-          ),
-          drawerItems(
-            "Lists",
-            Icons.list,
-            () {},
-          ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Divider(
-              color: Colors.grey,
-            ),
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children:[
-             drawerItems(
-            "Tell a Friend",
-            Icons.share,
-            () {},
-          ),
-          drawerItems(
-            "Help",
-            Icons.help_outline,
-            () {},
-          ), 
-            ]
-            )
-*/
