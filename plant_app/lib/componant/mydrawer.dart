@@ -14,19 +14,20 @@ class _MyDrawerState extends State<MyDrawer> {
       child: ListView(
         children: [
           Container(
-              child:  Padding(
-            padding: const EdgeInsets.only(top: 50),
-            child:Column(
-             mainAxisAlignment:MainAxisAlignment.end,
-              children: const [
-              CircleAvatar(
-                radius:70,
-                backgroundImage: AssetImage("images/assets/ali.jpg"),
-
-              ),
-              
-            ])
-          ))
+              child: Padding(
+                  padding: const EdgeInsets.only(top: 50),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: const [
+                        CircleAvatar(
+                          radius: 70,
+                          backgroundImage: AssetImage("images/assets/ali.jpg"),
+                        ),
+                        SizedBox(height: 5),
+                        Text("Ali Abdullah",
+                            style: TextStyle(
+                                fontSize: 22, fontWeight: FontWeight.w800))
+                      ])))
         ],
       ),
     );
