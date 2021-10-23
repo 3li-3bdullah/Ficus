@@ -16,9 +16,9 @@ class _MyDrawerState extends State<MyDrawer> {
           Container(
               child: Padding(
                   padding: const EdgeInsets.only(top: 50),
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: const [
+                  child: Column(              
+                    crossAxisAlignment: CrossAxisAlignment.end,    
+                    children: const [
                         CircleAvatar(
                           radius: 70,
                           backgroundImage: AssetImage("images/assets/ali.jpg"),
