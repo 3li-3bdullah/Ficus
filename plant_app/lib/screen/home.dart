@@ -12,10 +12,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return Scaffold(appBar: AppBar(
+    return Scaffold(
+      appBar: AppBar(
       elevation: 0,
       backgroundColor: const Color(0xff56b286),
-      actions: [Container(height: 60,width: 60,
+      actions: [Container(height: 50,width: 50,
          decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("images/assets/ali.jpg")),shape: BoxShape.circle,), 
