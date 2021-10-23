@@ -37,9 +37,43 @@ class _MyDrawerState extends State<MyDrawer> {
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Divider(color: Colors.grey),
           ),
+           drawerItems(
+            "Profile",
+            Icons.person_outline_outlined,
+            () {},
+          ),
+          drawerItems(
+            "Messages",
+            Icons.message_outlined,
+            () {},
+          ),
+          drawerItems(
+            "Lists",
+            Icons.list,
+            () {},
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Divider(
+              color: Colors.grey,
+            ),
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children:[
+             drawerItems(
+            "Tell a Friend",
+            Icons.share,
+            () {},
+          ),
+          drawerItems(
+            "Help",
+            Icons.help_outline,
+            () {},
+          ),
         ],
       ),
-    );
+         ] ));
   }
 
   InkWell drawerItems(String text, IconData icon, Function onTap) {
