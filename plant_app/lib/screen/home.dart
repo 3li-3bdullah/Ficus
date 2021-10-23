@@ -66,14 +66,14 @@ class _HomeState extends State<Home> {
           ),
         ),
         Positioned(
-            top: width / 2.2,
+            top: width / 4,
             right: - width / 2,
             child: Container(
               height: width / 1.5,
               width: width / 2,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                          image: AssetImage("images/assets/plant.png"))
+                          image: AssetImage("images/assets/plant.png"),fit: BoxFit.cover)
                   ),
             ))
       ],
