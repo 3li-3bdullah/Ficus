@@ -10,10 +10,33 @@ class MyDrawer extends StatefulWidget {
 class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
-    return Drawer(elevation: 0,
+    return Drawer(
       child: ListView(
         children: [
-          UserAccountsDrawerHeader(
+          Container(
+              child: const Padding(
+            padding: EdgeInsets.only(top: 50),
+          ))
+        ],
+      ),
+    );
+  }
+
+  InkWell drawerItems(String text, IconData icon, Function onTap) {
+    return InkWell(
+      child: ListTile(
+        title: Text(text,
+            style: const TextStyle(color: Colors.black, fontSize: 18)),
+        leading: Icon(icon, color: Colors.grey, size: 25),
+      ),
+      onTap: () {
+        onTap();
+      },
+    );
+  }
+}
+/* 
+UserAccountsDrawerHeader(
             accountName: const Text("Ali Abdullah" , style:TextStyle(color:Colors.black)),
             accountEmail: const Text("Sudanese", style:TextStyle(color:Colors.black)),
             currentAccountPicture: Container(
@@ -67,23 +90,4 @@ class _MyDrawerState extends State<MyDrawer> {
           ), 
             ]
             )
-        ],
-      ),
-    );
-  }
-
-  InkWell drawerItems(String text, IconData icon, Function onTap) {
-    return InkWell(
-      child: ListTile(
-        title: Text(text,
-            style: const TextStyle(color: Colors.black, fontSize: 18)),
-        leading: Icon(
-          icon, 
-          color: Colors.grey, size: 25),
-      ),
-      onTap: () {
-        onTap();
-      },
-    );
-  }
-}
+*/
