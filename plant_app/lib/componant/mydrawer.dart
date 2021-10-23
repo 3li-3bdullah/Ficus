@@ -23,11 +23,20 @@ class _MyDrawerState extends State<MyDrawer> {
                           radius: 70,
                           backgroundImage: AssetImage("images/assets/ali.jpg"),
                         ),
-                        SizedBox(height: 5),
+                        SizedBox(height: 20),
                         Text("Ali Abdullah",
                             style: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.w800))
-                      ])))
+                                fontSize: 22, fontWeight: FontWeight.w800)),
+                        SizedBox(height: 5),
+                        Text("Sudanese",
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w400)),
+                      ]))),
+          const SizedBox(height: 18),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Divider(color: Colors.grey),
+          ),
         ],
       ),
     );
