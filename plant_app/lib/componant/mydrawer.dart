@@ -21,7 +21,7 @@ class _MyDrawerState extends State<MyDrawer> {
                   image: DecorationImage(
                       image: AssetImage("images/assets/ali.jpg")),
                   shape: BoxShape.circle),
-            ),
+            ),decoration: const BoxDecoration(color:Colors.white),
           ),
          const Padding(
             padding: EdgeInsets.symmetric(horizontal:20),
