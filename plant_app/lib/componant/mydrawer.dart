@@ -13,11 +13,6 @@ class _MyDrawerState extends State<MyDrawer> {
     return Drawer(
       child: ListView(
         children: [
-          Container(
-            height: double.infinity,
-            width: double.infinity,
-            color:Colors.white
-          ),
           UserAccountsDrawerHeader(
             accountName: const Text("Ali Abdullah"),
             accountEmail: const Text("Sudanese"),
