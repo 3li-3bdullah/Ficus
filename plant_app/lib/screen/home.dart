@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
               width: double.infinity,
               color: const Color(0xff56b286),
             ),
-            SizedBox(height: width / 4),
+            SizedBox(height: halfHeight / 15),
             Padding(
                 padding: const EdgeInsets.only(left: 30),
                 child: Column(
@@ -54,37 +54,37 @@ class _HomeState extends State<Home> {
                           fontsize: 16,
                           fontweight: FontWeight.normal,
                           color: primary),
-                      const SizedBox(height: 10),
+                       SizedBox(height: halfHeight / 40),
                       const CustomText(
                           text: "Ficus",
                           fontsize: 20,
                           fontweight: FontWeight.normal,
                           color: Colors.white),
-                      const SizedBox(height: 20),
+                       SizedBox(height: halfHeight / 25),
                       CustomText(
                           text: "FROM",
                           fontsize: 16,
                           fontweight: FontWeight.normal,
                           color: primary),
-                      const SizedBox(height: 10),
+                       SizedBox(height: halfHeight / 40),
                       const CustomText(
                           text: "Moracede",
                           fontsize: 20,
                           fontweight: FontWeight.normal,
                           color: Colors.white),
-                      const SizedBox(height: 20),
+                       SizedBox(height: halfHeight / 25),
                       CustomText(
                           text: "SIZES",
                           fontsize: 16,
                           fontweight: FontWeight.normal,
                           color: primary),
-                      const SizedBox(height: 10),
+                       SizedBox(height: halfHeight / 40),
                       const CustomText(
                           text: "Small",
                           fontsize: 20,
                           fontweight: FontWeight.normal,
                           color: Colors.white),
-                      const SizedBox(height: 20),
+                       SizedBox(height: halfHeight / 25),
                     ])),
             Positioned(
               bottom: 0,
@@ -101,13 +101,13 @@ class _HomeState extends State<Home> {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: width / 6),
+                          SizedBox(height: halfHeight / 6),
                           const CustomText(
                               text: "All to know...",
                               fontsize: 22,
                               fontweight: FontWeight.w800,
                               color: Colors.black),
-                          const SizedBox(height: 20),
+                           SizedBox(height: halfHeight / 20),
                           RichText(
                               text: const TextSpan(children: [
                             TextSpan(
@@ -116,13 +116,13 @@ class _HomeState extends State<Home> {
                                 style: TextStyle(
                                     color: Colors.grey, fontSize: 14)),
                           ])),
-                          const SizedBox(height: 25),
+                           SizedBox(height: halfHeight / 20),
                           const CustomText(
                               text: "Details",
                               fontsize: 22,
                               fontweight: FontWeight.w800,
                               color: Colors.black),
-                          const SizedBox(height: 10),
+                           SizedBox(height: halfHeight / 40),
                           const CustomText(
                               text: "Plant height:35-45 cm",
                               fontsize: 14,
@@ -137,10 +137,10 @@ class _HomeState extends State<Home> {
                   )),
             ),
             Positioned(
-                top: width / 12,
+                top: halfHeight * 0.2,
                 left: width / 2,
                 child: Container(
-                  height: width / 1.5,
+                  height: halfHeight,
                   width: width / 2,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
