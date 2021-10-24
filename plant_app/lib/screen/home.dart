@@ -16,23 +16,23 @@ class _HomeState extends State<Home> {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     double halfHeight = height / 2;
+    double withoutAppbar = halfHeight / 5;
+    double increase = halfHeight * 0.05;
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
           backgroundColor: const Color(0xff56b286),
           actions: [
+            Container(margin: const EdgeInsets.only(right: 20)),
             Container(
-              margin: const EdgeInsets.only(right: 20 )),
-               Container(
-                height: width * 0.1,
-                width: width * 0.1,
-                decoration: const BoxDecoration(
-                  image:
-                      DecorationImage(image: AssetImage("images/assets/ali.jpg")),
-                  shape: BoxShape.circle,
-                ),
+              height: width * 0.2,
+              width: width * 0.2,
+              decoration: const BoxDecoration(
+                image:
+                    DecorationImage(image: AssetImage("images/assets/ali.jpg")),
+                shape: BoxShape.circle,
               ),
-            
+            ),
           ],
         ),
         drawer: MyDrawer(),
@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
               width: double.infinity,
               color: const Color(0xff56b286),
             ),
-            SizedBox(height: halfHeight / 15),
+            SizedBox(height: halfHeight / 8),
             Padding(
                 padding: const EdgeInsets.only(left: 30),
                 child: Column(
@@ -51,40 +51,40 @@ class _HomeState extends State<Home> {
                     children: [
                       CustomText(
                           text: "INDOOR",
-                          fontsize: 16,
+                          fontsize: 15,
                           fontweight: FontWeight.normal,
                           color: primary),
-                       SizedBox(height: halfHeight / 40),
+                      SizedBox(height: halfHeight / 45),
                       const CustomText(
                           text: "Ficus",
                           fontsize: 20,
                           fontweight: FontWeight.normal,
                           color: Colors.white),
-                       SizedBox(height: halfHeight / 25),
+                      SizedBox(height: halfHeight / 20),
                       CustomText(
                           text: "FROM",
-                          fontsize: 16,
+                          fontsize: 15,
                           fontweight: FontWeight.normal,
                           color: primary),
-                       SizedBox(height: halfHeight / 40),
+                      SizedBox(height: halfHeight / 45),
                       const CustomText(
                           text: "Moracede",
                           fontsize: 20,
                           fontweight: FontWeight.normal,
                           color: Colors.white),
-                       SizedBox(height: halfHeight / 25),
+                      SizedBox(height: halfHeight / 20),
                       CustomText(
                           text: "SIZES",
-                          fontsize: 16,
+                          fontsize: 15,
                           fontweight: FontWeight.normal,
                           color: primary),
-                       SizedBox(height: halfHeight / 40),
+                      SizedBox(height: halfHeight / 45),
                       const CustomText(
                           text: "Small",
                           fontsize: 20,
                           fontweight: FontWeight.normal,
                           color: Colors.white),
-                       SizedBox(height: halfHeight / 25),
+                      SizedBox(height: halfHeight / 20),
                     ])),
             Positioned(
               bottom: 0,
@@ -101,13 +101,13 @@ class _HomeState extends State<Home> {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: halfHeight / 6),
+                          SizedBox(height: halfHeight / 4),
                           const CustomText(
                               text: "All to know...",
                               fontsize: 22,
                               fontweight: FontWeight.w800,
                               color: Colors.black),
-                           SizedBox(height: halfHeight / 20),
+                          SizedBox(height: halfHeight / 20),
                           RichText(
                               text: const TextSpan(children: [
                             TextSpan(
@@ -116,13 +116,13 @@ class _HomeState extends State<Home> {
                                 style: TextStyle(
                                     color: Colors.grey, fontSize: 14)),
                           ])),
-                           SizedBox(height: halfHeight / 20),
+                          SizedBox(height: halfHeight / 20),
                           const CustomText(
                               text: "Details",
                               fontsize: 22,
                               fontweight: FontWeight.w800,
                               color: Colors.black),
-                           SizedBox(height: halfHeight / 40),
+                          SizedBox(height: halfHeight / 40),
                           const CustomText(
                               text: "Plant height:35-45 cm",
                               fontsize: 14,
@@ -137,10 +137,10 @@ class _HomeState extends State<Home> {
                   )),
             ),
             Positioned(
-                top: halfHeight * 0.2,
+                top: withoutAppbar + increase,
                 left: width / 2,
                 child: Container(
-                  height: halfHeight,
+                  height: halfHeight - withoutAppbar,
                   width: width / 2,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
