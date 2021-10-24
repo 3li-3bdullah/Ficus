@@ -44,10 +44,11 @@ class _HomeState extends State<Home> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("INDOOR", style: TextStyle(color: primary)),
+                       CustomText(text: "INDOOR", fontsize: 16, 
+                          fontweight: FontWeight.normal ,color:primary ),
                       const SizedBox(height: 10),
-                      const Text("Ficus",
-                          style: TextStyle(color: Colors.white, fontSize: 20)),
+                     const CustomText(text: "Ficus", fontsize: 20, 
+                          fontweight: FontWeight.normal ,color:Colors.white ),
                       const SizedBox(height: 20),
                       Text("FROM", style: TextStyle(color: primary)),
                       const SizedBox(height: 10),
