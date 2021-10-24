@@ -27,12 +27,14 @@ class _MyDrawerState extends State<MyDrawer> {
                   text: "Ali Abdullah",
                   fontsize:22,
                   fontweight: FontWeight.w800,
+                  color:Colors.black
                 ),
                 SizedBox(height: 5),
                 CustomText(
                   text:"Sudanese",
                   fontsize:16,
                   fontweight: FontWeight.w400,
+                  color:Colors.black
                 ),
               ])),
       const SizedBox(height: 18),
