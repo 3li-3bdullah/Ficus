@@ -57,7 +57,14 @@ class _MyDrawerState extends State<MyDrawer> {
           color: Colors.grey,
         ),
       ),
-      
+      Row(children: [
+        Center(
+            child: Switch(
+                value: _light,
+                onChanged: (state) {
+                  _light = state;
+                }))
+      ]),
       drawerItems(
         "Tell a Friend",
         Icons.share,
