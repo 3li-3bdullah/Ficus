@@ -24,8 +24,8 @@ class _HomeState extends State<Home> {
             Container(
               margin: const EdgeInsets.only(right: 20 )),
                Container(
-                height: 50,
-                width: 50,
+                height: width * 0.1,
+                width: width * 0.1,
                 decoration: const BoxDecoration(
                   image:
                       DecorationImage(image: AssetImage("images/assets/ali.jpg")),
