@@ -22,9 +22,7 @@ class _MyDrawerState extends State<MyDrawer> {
                   backgroundImage: AssetImage("images/assets/ali.jpg"),
                 ),
                 SizedBox(height: 20),
-                Text("Ali Abdullah",
-                    style:
-                        TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+                CustomText(),
                 SizedBox(height: 5),
                 Text("Sudanese",
                     style:
@@ -56,7 +54,11 @@ class _MyDrawerState extends State<MyDrawer> {
           color: Colors.grey,
         ),
       ),
-      drawerItems(
+      Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisSize: MainAxisSize.max,
+        children:[
+        drawerItems(
         "Tell a Friend",
         Icons.share,
         () {},
@@ -66,6 +68,8 @@ class _MyDrawerState extends State<MyDrawer> {
         Icons.help_outline,
         () {},
       )
+      ])
+      
     ])
     );
   }
@@ -81,5 +85,18 @@ class _MyDrawerState extends State<MyDrawer> {
         onTap();
       },
     );
+  }
+}
+
+class CustomText extends StatelessWidget {
+  const CustomText({
+    required this.text,
+  });
+  final String text;
+  @override
+  Widget build(BuildContext context) {
+    return Text(text,
+        style:
+            TextStyle(fontSize: 22, fontWeight: FontWeight.w800));
   }
 }
