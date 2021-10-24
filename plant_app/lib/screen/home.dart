@@ -55,6 +55,7 @@ class _HomeState extends State<Home> {
           child: Container(
             height: width / 1.2,
             width: width,
+
             decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -63,7 +64,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         Positioned(
-            top: width / 4,
+            top: width / 6,
             left:  width / 2,
             child: Container(
               height: width / 1.5,
@@ -77,51 +78,3 @@ class _HomeState extends State<Home> {
     ));
   }
 }
-/*
-child: Column(
-        children: [
-          Container(
-            height: width * 1.2,
-            width: width,
-            color: Colors.green,
-          ),
-          Stack(
-            children: [
-              Container(
-                height: width * 1.2,
-                width: width,
-                color: Colors.white,
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        topRight: Radius.circular(30))),
-              ),
-              Positioned(
-                  top: width * .1,
-                  right: width * 1.5,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("image/assets/plant.png"))),
-                  ))
-            ],
-          )
-        ],
-      ),
-
-*/
-
-/*
-Container(
-          height: double.infinity,
-          width: width,
-          color: Colors.green,
-        ),
-*/
-
-/*
- height: 500,
-                  decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("images/assets/plant.png"))), 
-*/
