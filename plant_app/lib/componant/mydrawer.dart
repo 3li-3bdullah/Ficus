@@ -55,23 +55,21 @@ class _MyDrawerState extends State<MyDrawer> {
         ),
       ),
       Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        mainAxisSize: MainAxisSize.max,
-        children:[
-        drawerItems(
-        "Tell a Friend",
-        Icons.share,
-        () {},
-      ),
-      drawerItems(
-        "Help",
-        Icons.help_outline,
-        () {},
-      )
-      ])
-      
-    ])
-    );
+          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            drawerItems(
+              "Tell a Friend",
+              Icons.share,
+              () {},
+            ),
+            drawerItems(
+              "Help",
+              Icons.help_outline,
+              () {},
+            )
+          ])
+    ]));
   }
 
   InkWell drawerItems(String text, IconData icon, Function onTap) {
@@ -91,12 +89,15 @@ class _MyDrawerState extends State<MyDrawer> {
 class CustomText extends StatelessWidget {
   const CustomText({
     required this.text,
+    required this.fontsize,
+    required  this.fontweight,
   });
   final String text;
+  final double fontsize;
+  final FontWeight fontweight;
   @override
   Widget build(BuildContext context) {
     return Text(text,
-        style:
-            TextStyle(fontSize: 22, fontWeight: FontWeight.w800));
+        style: TextStyle(fontSize: fontsize, fontWeight: fontweight));
   }
 }
