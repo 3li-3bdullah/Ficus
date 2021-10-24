@@ -10,7 +10,6 @@ class MyDrawer extends StatefulWidget {
 class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
-     bool _light = true;
     return Drawer(
         child: ListView(children: [
       Padding(
@@ -57,14 +56,6 @@ class _MyDrawerState extends State<MyDrawer> {
           color: Colors.grey,
         ),
       ),
-      Row(children: [
-        Center(
-            child: Switch(
-                value: _light,
-                onChanged: (state) {
-                  _light = state;
-                }))
-      ]),
       drawerItems(
         "Tell a Friend",
         Icons.share,
@@ -75,7 +66,8 @@ class _MyDrawerState extends State<MyDrawer> {
         Icons.help_outline,
         () {},
       )
-    ]));
+    ])
+    );
   }
 
   InkWell drawerItems(String text, IconData icon, Function onTap) {
