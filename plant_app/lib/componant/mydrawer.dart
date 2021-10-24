@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/widgets/custom_text.dart';
 
 class MyDrawer extends StatefulWidget {
   // const MyDrawer({Key? key}) : super(key: key);
@@ -22,11 +23,17 @@ class _MyDrawerState extends State<MyDrawer> {
                   backgroundImage: AssetImage("images/assets/ali.jpg"),
                 ),
                 SizedBox(height: 20),
-                CustomText(),
+               CustomText(
+                  text: "Ali Abdullah",
+                  fontsize:22,
+                  fontweight: FontWeight.w800,
+                ),
                 SizedBox(height: 5),
-                Text("Sudanese",
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.w400)),
+                CustomText(
+                  text:"Sudanese",
+                  fontsize:16,
+                  fontweight: FontWeight.w400,
+                ),
               ])),
       const SizedBox(height: 18),
       const Padding(
@@ -86,18 +93,3 @@ class _MyDrawerState extends State<MyDrawer> {
   }
 }
 
-class CustomText extends StatelessWidget {
-  const CustomText({
-    required this.text,
-    required this.fontsize,
-    required  this.fontweight,
-  });
-  final String text;
-  final double fontsize;
-  final FontWeight fontweight;
-  @override
-  Widget build(BuildContext context) {
-    return Text(text,
-        style: TextStyle(fontSize: fontsize, fontWeight: fontweight));
-  }
-}
