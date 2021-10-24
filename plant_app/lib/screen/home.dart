@@ -89,12 +89,13 @@ class _HomeState extends State<Home> {
                                     TextStyle(color: Colors.grey, fontSize: 14)),
                                     
                           ])),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 25),
                           const Text("Details",
                               style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 22,
                                   fontWeight: FontWeight.w800)),
+                                  const SizedBox(height: 10),
                                  const Text('''Plant height:35-45 cm
                                   Nursery pot width 12cm''' , style:TextStyle(fontSize:14, color:Colors.grey))
 
