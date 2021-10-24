@@ -91,11 +91,8 @@ class _HomeState extends State<Home> {
                                     color: Colors.grey, fontSize: 14)),
                           ])),
                           const SizedBox(height: 25),
-                          const Text("Details",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w800)),
+                          const CustomText(text: "Details", fontsize: 22, 
+                          fontweight: FontWeight.w800 ,color:Colors.black ),
                           const SizedBox(height: 10),
                           const CustomText(text: "Plant height:35-45 cm", fontsize: 14, 
                           fontweight: FontWeight.normal ,color:Colors.grey ),
