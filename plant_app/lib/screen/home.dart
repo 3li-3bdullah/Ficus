@@ -59,8 +59,8 @@ class _HomeState extends State<Home> {
                       CustomText(text: "SIZES", fontsize: 16, 
                           fontweight: FontWeight.normal ,color:primary ),
                       const SizedBox(height: 10),
-                      const Text("Small",
-                          style: TextStyle(color: Colors.white, fontSize: 20)),
+                      const CustomText(text: "Small", fontsize: 20, 
+                          fontweight: FontWeight.normal ,color:Colors.white ),
                       const SizedBox(height: 20),
                     ])),
             Positioned(
