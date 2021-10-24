@@ -14,6 +14,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     final Color primary = Colors.grey.shade300;
     double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    double halfHeight = height / 2;
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
@@ -44,29 +46,47 @@ class _HomeState extends State<Home> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                       CustomText(text: "INDOOR", fontsize: 16, 
-                          fontweight: FontWeight.normal ,color:primary ),
+                      CustomText(
+                          text: "INDOOR",
+                          fontsize: 16,
+                          fontweight: FontWeight.normal,
+                          color: primary),
                       const SizedBox(height: 10),
-                     const CustomText(text: "Ficus", fontsize: 20, 
-                          fontweight: FontWeight.normal ,color:Colors.white ),
+                      const CustomText(
+                          text: "Ficus",
+                          fontsize: 20,
+                          fontweight: FontWeight.normal,
+                          color: Colors.white),
                       const SizedBox(height: 20),
-                       CustomText(text: "FROM", fontsize: 16, 
-                          fontweight: FontWeight.normal ,color:primary ),
+                      CustomText(
+                          text: "FROM",
+                          fontsize: 16,
+                          fontweight: FontWeight.normal,
+                          color: primary),
                       const SizedBox(height: 10),
-                      const CustomText(text: "Moracede", fontsize: 20, 
-                          fontweight: FontWeight.normal ,color:Colors.white ),
+                      const CustomText(
+                          text: "Moracede",
+                          fontsize: 20,
+                          fontweight: FontWeight.normal,
+                          color: Colors.white),
                       const SizedBox(height: 20),
-                      CustomText(text: "SIZES", fontsize: 16, 
-                          fontweight: FontWeight.normal ,color:primary ),
+                      CustomText(
+                          text: "SIZES",
+                          fontsize: 16,
+                          fontweight: FontWeight.normal,
+                          color: primary),
                       const SizedBox(height: 10),
-                      const CustomText(text: "Small", fontsize: 20, 
-                          fontweight: FontWeight.normal ,color:Colors.white ),
+                      const CustomText(
+                          text: "Small",
+                          fontsize: 20,
+                          fontweight: FontWeight.normal,
+                          color: Colors.white),
                       const SizedBox(height: 20),
                     ])),
             Positioned(
               bottom: 0,
               child: Container(
-                  height: width / 1.2,
+                  height: width,
                   width: width,
                   decoration: const BoxDecoration(
                       color: Colors.white,
@@ -79,8 +99,11 @@ class _HomeState extends State<Home> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(height: width / 6),
-                          const CustomText(text: "All to know...", fontsize: 22, 
-                          fontweight: FontWeight.w800 ,color:Colors.black ),
+                          const CustomText(
+                              text: "All to know...",
+                              fontsize: 22,
+                              fontweight: FontWeight.w800,
+                              color: Colors.black),
                           const SizedBox(height: 20),
                           RichText(
                               text: const TextSpan(children: [
@@ -91,13 +114,22 @@ class _HomeState extends State<Home> {
                                     color: Colors.grey, fontSize: 14)),
                           ])),
                           const SizedBox(height: 25),
-                          const CustomText(text: "Details", fontsize: 22, 
-                          fontweight: FontWeight.w800 ,color:Colors.black ),
+                          const CustomText(
+                              text: "Details",
+                              fontsize: 22,
+                              fontweight: FontWeight.w800,
+                              color: Colors.black),
                           const SizedBox(height: 10),
-                          const CustomText(text: "Plant height:35-45 cm", fontsize: 14, 
-                          fontweight: FontWeight.normal ,color:Colors.grey ),
-                          const CustomText(text: "Nursery pot width 12cm", fontsize: 14, 
-                          fontweight: FontWeight.normal ,color:Colors.grey ),
+                          const CustomText(
+                              text: "Plant height:35-45 cm",
+                              fontsize: 14,
+                              fontweight: FontWeight.normal,
+                              color: Colors.grey),
+                          const CustomText(
+                              text: "Nursery pot width 12cm",
+                              fontsize: 14,
+                              fontweight: FontWeight.normal,
+                              color: Colors.grey),
                         ]),
                   )),
             ),
