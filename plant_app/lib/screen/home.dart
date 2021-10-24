@@ -86,8 +86,19 @@ class _HomeState extends State<Home> {
                                 text:
                                     "if you are completely now to houseplants then Ficus is a brillant first plant to adopt it is very easy to look after and won't occupy too much space",
                                 style:
-                                    TextStyle(color: Colors.grey, fontSize: 14))
-                          ]))
+                                    TextStyle(color: Colors.grey, fontSize: 14)),
+                                    
+                          ])),
+                          const SizedBox(height: 20),
+                          const Text("Details",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w800)),
+                                 const Text('''Plant height:35-45 cm
+                                  Nursery pot width 12cm''' )
+
+
                         ]),
                   )),
             ),
