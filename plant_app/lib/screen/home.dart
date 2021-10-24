@@ -11,6 +11,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
+    final Color primary = Colors.grey.shade300;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: AppBar(
@@ -41,22 +42,22 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.only(left: 30),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
-                      Text("INDOOR", style: TextStyle(color: Colors.grey)),
-                      SizedBox(height: 10),
-                      Text("Ficus",
+                    children: [
+                      Text("INDOOR", style: TextStyle(color: primary)),
+                      const SizedBox(height: 10),
+                      const Text("Ficus",
                           style: TextStyle(color: Colors.white, fontSize: 20)),
-                      SizedBox(height: 20),
-                      Text("FROM", style: TextStyle(color: Colors.grey)),
-                      SizedBox(height: 10),
-                      Text("Moracede",
+                      const SizedBox(height: 20),
+                      Text("FROM", style: TextStyle(color: primary)),
+                      const SizedBox(height: 10),
+                      const Text("Moracede",
                           style: TextStyle(color: Colors.white, fontSize: 20)),
-                      SizedBox(height: 20),
-                      Text("SIZES", style: TextStyle(color: Colors.grey)),
-                      SizedBox(height: 10),
-                      Text("Small",
+                      const SizedBox(height: 20),
+                      Text("SIZES", style: TextStyle(color: primary)),
+                      const SizedBox(height: 10),
+                      const Text("Small",
                           style: TextStyle(color: Colors.white, fontSize: 20)),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                     ])),
             Positioned(
               bottom: 0,
@@ -85,9 +86,8 @@ class _HomeState extends State<Home> {
                             TextSpan(
                                 text:
                                     "if you are completely now to houseplants then Ficus is a brillant first plant to adopt it is very easy to look after and won't occupy too much space",
-                                style:
-                                    TextStyle(color: Colors.grey, fontSize: 14)),
-                                    
+                                style: TextStyle(
+                                    color: Colors.grey, fontSize: 14)),
                           ])),
                           const SizedBox(height: 25),
                           const Text("Details",
@@ -95,11 +95,13 @@ class _HomeState extends State<Home> {
                                   color: Colors.black,
                                   fontSize: 22,
                                   fontWeight: FontWeight.w800)),
-                                  const SizedBox(height: 10),
-                                 const Text('''Plant height:35-45 cm
-                                  Nursery pot width 12cm''' , style:TextStyle(fontSize:14, color:Colors.grey))
-
-
+                          const SizedBox(height: 10),
+                          const Text("Plant height:35-45 cm",
+                              style:
+                                  TextStyle(fontSize: 14, color: Colors.grey)),
+                          const Text("Nursery pot width 12cm",
+                              style:
+                                  TextStyle(fontSize: 14, color: Colors.grey))
                         ]),
                   )),
             ),
