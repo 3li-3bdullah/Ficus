@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
             Positioned(
               bottom: 0,
               child: Container(
-                  height: width,
+                  height: halfHeight,
                   width: width,
                   decoration: const BoxDecoration(
                       color: Colors.white,
