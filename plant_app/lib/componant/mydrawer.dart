@@ -15,7 +15,7 @@ class _MyDrawerState extends State<MyDrawer> {
         children: [
           Container(
               child: Padding(
-                  padding: const EdgeInsets.only(top: 50),
+                  padding: const EdgeInsets.only(top: 30 , left:20),
                   child: Column(              
                     crossAxisAlignment: CrossAxisAlignment.start,    
                     children: const [
@@ -58,7 +58,7 @@ class _MyDrawerState extends State<MyDrawer> {
               color: Colors.grey,
             ),
           ),
-          Expanded(child: Column(
+          Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children:[
              drawerItems(
@@ -72,7 +72,7 @@ class _MyDrawerState extends State<MyDrawer> {
             () {},
           ),
         ],
-      ),)
+      )
           
          ] ));
   }
