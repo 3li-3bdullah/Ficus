@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.w800)),
                                  const Text('''Plant height:35-45 cm
-                                  Nursery pot width 12cm''' )
+                                  Nursery pot width 12cm''' , style:TextStyle(fontSize:14, color:Colors.grey))
 
 
                         ]),
