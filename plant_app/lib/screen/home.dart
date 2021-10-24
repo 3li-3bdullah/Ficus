@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/componant/mydrawer.dart';
+import 'package:plant_app/widgets/custom_text.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -96,12 +97,10 @@ class _HomeState extends State<Home> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.w800)),
                           const SizedBox(height: 10),
-                          const Text("Plant height:35-45 cm",
-                              style:
-                                  TextStyle(fontSize: 14, color: Colors.grey)),
-                          const Text("Nursery pot width 12cm",
-                              style:
-                                  TextStyle(fontSize: 14, color: Colors.grey))
+                          const CustomText(text: "Plant height:35-45 cm", fontsize: 14, 
+                          fontweight: FontWeight.normal ,color:Colors.grey ),
+                          const CustomText(text: "Nursery pot width 12cm", fontsize: 14, 
+                          fontweight: FontWeight.normal ,color:Colors.grey ),
                         ]),
                   )),
             ),
