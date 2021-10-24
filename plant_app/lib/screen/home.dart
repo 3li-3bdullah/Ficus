@@ -30,29 +30,26 @@ class _HomeState extends State<Home> {
           width: double.infinity,
           color: const Color(0xff56b286),
         ),
-
-        // Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-        //   const SizedBox(height: 30),
-        //   Row(
-        //     children: [
-        //       Row(
-        //         children: [
-        //           MyDrawer(),
-        //         ],
-        //       ),
-        //       Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-        //         Container(
-        //           height: 60,
-        //           width: 60,
-        //           decoration: const BoxDecoration(
-        //               image: DecorationImage(
-        //                   image: AssetImage("images/assets/ali.jpg")),
-        //               shape: BoxShape.circle),
-        //         )
-        //       ]),
-        //     ],
-        //   )
-        // ]),
+        SizedBox(height:width / 4),
+        Padding(
+          padding: const EdgeInsets.only(left:30),
+          child:Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+               Text("INDOOR" , style: TextStyle(color:Colors.grey)),
+                SizedBox(height: 10),
+               Text("Ficus" , style: TextStyle(color:Colors.white , fontSize: 20)),
+                SizedBox(height: 20),
+               Text("FROM" , style: TextStyle(color:Colors.grey)),
+                SizedBox(height: 10),
+               Text("Moracede" , style: TextStyle(color:Colors.white, fontSize: 20)),
+                SizedBox(height: 20),
+               Text("SIZES" , style: TextStyle(color:Colors.grey)),
+                SizedBox(height: 10),
+               Text("Small" , style: TextStyle(color:Colors.white, fontSize: 20)),
+                SizedBox(height: 20),
+          ])
+          ),
         Positioned(
           bottom: 0,
           child: Container(
@@ -73,7 +70,7 @@ class _HomeState extends State<Home> {
               width: width / 2,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                          image: AssetImage("images/assets/plant.png"),fit: BoxFit.cover)
+                          image: AssetImage("images/assets/ficus.png"),fit: BoxFit.cover)
                   ),
             ))
       ],
