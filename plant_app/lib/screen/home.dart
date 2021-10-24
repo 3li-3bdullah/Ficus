@@ -22,14 +22,17 @@ class _HomeState extends State<Home> {
           backgroundColor: const Color(0xff56b286),
           actions: [
             Container(
-              height: 50,
-              width: 50,
-              decoration: const BoxDecoration(
-                image:
-                    DecorationImage(image: AssetImage("images/assets/ali.jpg")),
-                shape: BoxShape.circle,
+              margin: const EdgeInsets.only(right: 20 )),
+               Container(
+                height: 50,
+                width: 50,
+                decoration: const BoxDecoration(
+                  image:
+                      DecorationImage(image: AssetImage("images/assets/ali.jpg")),
+                  shape: BoxShape.circle,
+                ),
               ),
-            )
+            
           ],
         ),
         drawer: MyDrawer(),
