@@ -63,7 +63,9 @@ class _MyDrawerState extends State<MyDrawer> {
           color: Colors.grey,
         ),
       ),
-      drawerItems(
+      Column(children:[
+        const Spacer(),
+        drawerItems(
         "Tell a Friend",
         Icons.share,
         () {},
@@ -73,6 +75,7 @@ class _MyDrawerState extends State<MyDrawer> {
         Icons.help_outline,
         () {},
       )
+      ])
     ]));
   }
 
