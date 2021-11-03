@@ -63,21 +63,16 @@ class _MyDrawerState extends State<MyDrawer> {
           color: Colors.grey,
         ),
       ),
-      Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            drawerItems(
-              "Tell a Friend",
-              Icons.share,
-              () {},
-            ),
-            drawerItems(
-              "Help",
-              Icons.help_outline,
-              () {},
-            )
-          ])
+      drawerItems(
+        "Tell a Friend",
+        Icons.share,
+        () {},
+      ),
+      drawerItems(
+        "Help",
+        Icons.help_outline,
+        () {},
+      )
     ]));
   }
 
