@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plant_app/widgets/custom_text.dart';
 
 class MyDrawer extends StatefulWidget {
-  // const MyDrawer({Key? key}) : super(key: key);
+  const MyDrawer({Key? key}) : super(key: key);
 
   @override
   _MyDrawerState createState() => _MyDrawerState();
