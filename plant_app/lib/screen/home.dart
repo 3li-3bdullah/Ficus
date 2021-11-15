@@ -16,8 +16,8 @@ class _HomeState extends State<Home> {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     double halfHeight = height / 2;
-    double withoutAppbar = halfHeight / 5;
-    double increase = halfHeight * 0.05;
+    double withoutAppbar = halfHeight / 6;
+    // double increase = halfHeight * 0.05;
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
             ),
           ],
         ),
-        drawer: MyDrawer(),
+        drawer: const MyDrawer(),
         body: Stack(
           children: [
             Container(
@@ -137,7 +137,7 @@ class _HomeState extends State<Home> {
                   )),
             ),
             Positioned(
-                top: withoutAppbar + increase,
+                top: halfHeight / 4,
                 left: width / 2,
                 child: Container(
                   height: halfHeight - withoutAppbar,
