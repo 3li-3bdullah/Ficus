@@ -1,5 +1,5 @@
 # Plant-App
-Plant App , so simple app just designed because i saw it on WhatsApp ( Awaab Story ) =) .
+Plant App , so simple app just designed because i saw person has designed by Adobe xd on WhatsApp ( Awaab Story ) =) .
 
 
 
